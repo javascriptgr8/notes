@@ -10,8 +10,7 @@ function show(a,...args)
 show(10,20,30,40);
 </script>
 <br><br>
-
-
+----------------------------------
 
 <script>
 //Arguments
@@ -29,6 +28,7 @@ function demo(a)
 }
 demo(10,20,30,40,50);
 </script>
+----------------------------------
 
 <br><br><br>
 <script>
@@ -40,6 +40,7 @@ var a=function exp(a,b)
 a(1,11);
 </script>
 
+----------------------------------
 
 <br><br><br>
 <script>
@@ -50,6 +51,7 @@ var b=function(a,b)
 };
 document.write(b(12,3));//15
 </script>
+----------------------------------
 
 <br><br>
 <script>
@@ -64,6 +66,7 @@ sum(function(){
 	return "Suman Kumar";
 })
 </script>
+----------------------------------
 
 <br><br><br>
 <script>
@@ -78,6 +81,7 @@ var res=add(10);
 document.write(res(20));//30
 </script>
 <br><br><br>
+----------------------------------
 
 <script>
 //Arrow Function : Arrow Function ko define karne se pahle call nahi kar sakte hai
@@ -85,6 +89,7 @@ document.write(res(20));//30
 var Ar=()=> 'Hello World';
 document.write(Ar());
 </script>
+----------------------------------
 
 <br><br>
 <script>
@@ -94,6 +99,7 @@ var a=()=>{
 }
 document.write(a()); //Hello
 </script>
+----------------------------------
 
 <br><br>
 <script>
@@ -104,6 +110,7 @@ var sum=(a,b)=>{
 document.write(sum(12,2));
 </script>
 
+----------------------------------
 
 <br><br><br>
 <script>
@@ -119,12 +126,14 @@ document.write(sum(12,2));
 })(12,3);
 </script>
 <br><br><br>
+----------------------------------
 
 <script>
 //typeof : its find data type
 var a="Hello";
 document.write(typeof(a));//string
 </script>
+----------------------------------
 
 <br><br><br>
 <script>
@@ -142,6 +151,7 @@ document.write(record.name);//Rahul
 document.write(record.sum(2,1));//2
 document.write(record.eduction[1]);//12th
 </script>
+----------------------------------
 
 <br><br><br>
 <script>
@@ -158,6 +168,7 @@ for(var key in record)
 document.write(key +" => "+ record[key]);
 }
 </script>
+----------------------------------
 
 <br><br>
 <script>
@@ -185,6 +196,7 @@ ary.forEach(function(value,index,a){
 	document.write(index +"=> "+value+"<br>");
 })	
 </script>
+----------------------------------
 
 
 <script>
@@ -195,6 +207,7 @@ for(var value of ary)
 	document.write(value+"<br>");
 }	
 </script>
+----------------------------------
 
 
 <br><br>
@@ -210,6 +223,7 @@ for(var i=0;i<=total;i++)
 document.write(ary);	
 </script>
 <br><br>
+----------------------------------
 
 
 <script>
@@ -220,6 +234,7 @@ var res=ary.join("-");
 document.write(res);
 //10-88-745-90-49-25-5
 </script>
+----------------------------------
 
 
 <script>
@@ -231,6 +246,7 @@ document.write(res);
 
 
 
+----------------------------------
 
 <script>
 //Slice method
@@ -249,6 +265,7 @@ document.write(res);
 
 
 
+----------------------------------
 
 
 <script>
@@ -262,6 +279,7 @@ document.write(typeof(res));
 </script>
 
 
+----------------------------------
 
 <script>
 //Array.isArray method :- ye check karta hai ki ye array hai ya nahi
@@ -276,6 +294,7 @@ document.write(res2);//false
 
 
 
+----------------------------------
 
 <script>
 //splice method :- ye array ke value ko remove,change and add karta hai, ye original array ko change karta hai
@@ -298,6 +317,7 @@ document.write(ary);
 </script>
 
 
+----------------------------------
 
 <script>
 //indexOf method :- ye value ka index show karta hai, or nahi find karne par -1 show karta hai, isme hamlog searching ka position set kar sakte hai
@@ -317,6 +337,7 @@ document.write(res);
 </script>
 
 
+----------------------------------
 
 <script>
 //fill method :- ye array me static value set karat hai, ye original array ko change karta hai, ye last ko add nahi karta hai
@@ -328,7 +349,7 @@ ary.fill(88,2,4);
 document.write(ary); //ram,raj,88,88,tom
 </script>
 
-
+----------------------------------
 
 <script>
 //unshift method :- ye array me value ko strat position pe add karte hai
@@ -338,6 +359,7 @@ document.write(ary); //100,10,88,745,90,88
 </script>
 
 
+----------------------------------
 
 <script>
 //push method :- ye array me value ko end position pe add karte hai
@@ -348,7 +370,7 @@ document.write(ary); //10,88,745,90,88,100
 
 
 
-
+----------------------------------
 <script>
 //shift method :- ye array ke start value ko remove karte hai
 var ary=[10,88,745,90,88];
@@ -357,7 +379,7 @@ document.write(ary); //88,745,90,88
 </script>
 
 
-
+----------------------------------
 <script>
 //pop method :- ye array ke last value ko remove karte hai
 var ary=[10,88,745,90,88];
@@ -368,7 +390,112 @@ document.write(ary); //10,88,745,90
 
 
 
+///////////////////////String///////////////////////
 
+<script>
+//Template literal : isme multiple line string write kar sakte hai.
+var name="suman kumar";
+document.write(`Welocme mr. ${name}`);
+
+var msg=`Welcome
+	World
+`;
+document.write(msg);
+</script>
+
+
+
+----------------------------------
+<script>
+//Length : 
+var str="Hello";
+document.write(str.length);
+</script>
+
+----------------------------------
+<script>
+//charAt : it find character
+var str="Hello";
+document.write(str.charAt(1)); //e
+</script>
+----------------------------------
+
+
+<script>
+//charCodeAt : return unnicode
+var str="Hello";
+document.write(str.charCodeAt(2)); //108
+</script>
+
+
+<script>
+//replace : it take two parameter repalce(old,new)
+var str="Hello world";
+document.write(str.replace('world','suman')); //Hello suman
+</script>
+
+----------------------------------
+
+
+<script>
+//split : string convert into array
+var str="PHP is a Server side language";
+var res=str.split(' ');
+document.write(res); //PHP,is,a,Server,side,language
+document.write(typeof(res));//object
+
+document.write(typeof(str));//string
+</script>
+
+----------------------------------
+
+<script>
+//indexOf : return indx position, isme starting index de sakte hai ki yaha se find karna hai
+var str="Hello World";
+var res=str.indexOf('W');
+document.write(res); //6
+
+
+var res=str.indexOf('l',4,20);
+document.write(res); //9
+</script>
+
+----------------------------------
+
+<script>
+//search : return indx position, isme start index define nahi kar sakte hai
+var str="Hello World";
+var res=str.search('W');
+document.write(res); //6
+</script>
+
+
+----------------------------------
+<script>
+//slice : it contain -ve
+var str="PHP is server side language";
+var res=str.slice(4,12);
+document.write(res +"<br>"); //is serve
+
+var str="PHP is server side language";
+document.write(str.slice(-12, -2)); //ide langua
+</script>
+
+-----------------------------------
+<script>
+//substring : slice and substring are almost same, but substring can not contain -ve
+var str="PHP is server side language";
+document.write(str.substring(4,20)); //is server side l
+</script>
+------------------------------------
+<script>
+//substr : 
+var str="PHP is server side language";
+document.write(str.substr(4,20)); //is server side langu
+</script>
+------------------------------------
+
+////////////////////////Number Method ///////////////////////
 
 
 
