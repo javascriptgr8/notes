@@ -499,37 +499,68 @@ document.write(str.substr(4,20)); //is server side langu
 
 
 
+<script>
+//toString :- ye number ko string me convert karta hai
+var num=10;
+document.write(typeof(num));//number
 
+var res=toString(num);
+document.write(typeof(res)); //string
+</script>
+-----------------------------------
 
+<script>
+//toFixed Method :- isme point ke bad kina number show karna hai,ye number ko string me v convert karta hai
+var num=1432.4567;
+// document.write(num.toFixed());//1432
+document.write(num.toFixed(2));//1432.46
+</script>
+-------------------------------------
 
+<script>
+//isInteger Method :- ye check karta hai ki number integer hai ya nahi, return true false
+document.write(Number.isInteger(1432));//true
+document.write(Number.isInteger(1432.4567));//false
+document.write(Number.isInteger('Hello'));//false
+</script>
+------------------------------------
 
+<script>
+//min and max
+document.write(Math.min(10,5,14,98));
+document.write(Math.max(10,5,14,98));
+</script>
+-----------------------------------
 
+<script>
+//floor
+document.write(Math.floor(2)); //2
+document.write(Math.floor(2.25)); //2
+document.write(Math.floor(2.65));//2
+document.write(Math.floor(0.65));//0
+document.write(Math.floor(-2.65));//-3
+document.write(Math.floor(-2.45));//-3
+document.write(Math.floor(-2)+"<br>");//-2
 
+</script>
+-----------------------------------
+<script>
+//round
+document.write(Math.round(2)+"<br>"); //2
+document.write(Math.round(2.25)+"<br>"); //2
+document.write(Math.round(2.65)+"<br>");//3
+document.write(Math.round(0.65)+"<br>");//1
+document.write(Math.round(-2.65)+"<br>");//-3
+document.write(Math.round(-2.45)+"<br>");//-2
+document.write(Math.round(-2)+"<br>");//-2
+</script>
+-------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+How to generate random number :-
+<script>
+//random
+document.write(Math.random()*100+1+"<br>");
+var res=Math.floor(Math.random()*100+1);
+document.write(res);
+</script>
+--------------------------------------
