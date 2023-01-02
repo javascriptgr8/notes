@@ -57,6 +57,13 @@ document.write(ary);
 OutPut:-
 Aditi,Neha,Rahul,Suman
 
+OR
+<script type="text/javascript">
+var ary=[10,8,88,14,99];
+ary.sort(function(a,b) { return a-b } );
+document.write(ary);
+</script>
+
 ------------------------
 //Array Reverse
 var ary=["Suman","Neha","Rahul","Aditi"];
