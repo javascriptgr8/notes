@@ -995,7 +995,18 @@ Only box id ke under p tag ko print kare:
 var res=document.querySelector("#box p");
 console.log(res);
 </script>
-
+============================
+Only box id ke under p tag ko print kare:
+<div id="box">
+<p>Hello I Am Paragraph Inside The Box ID</p>
+</div>
+<p>Another Paragraph</p>
+<script>
+var res=document.querySelector("#box p");
+console.log(res);
+</script>	
+	
+	
 =============================
 getAttribute
 <div id="myid" class="list">Hello World</div>
@@ -1092,8 +1103,30 @@ How to add ID:
 var res=document.getElementById("myid");
 res.id="listid";
 </script>
-
-==================
+===================================
+classList:-
+ye hame savi class sho karta hai, length v show karta hai, koi new class add v kar sakete hai.
+old class remove v ka sakte hai,replace v kar sakte hai.
+<div id="myid" class="main xcv">hello world</div>
+<script>
+var res=document.getElementById("myid");
+res.classList.add('main2'); //ye class add karega
+res.classList.remove('main'); //ye main class ko remove kar dega
+res.classList.replace('main','abc'); //ye main class ko replace kar ke abc kar dega
+res.classList.toggle('main');//ye add or remove dono karga
+var exist=res.classList.contains('xcv'); //ye true or false return karga
+console.log(exist);
+console.log(res.classList.length); //output to claa qty
+</script>
+====================================
+How to add style css:-
+<div id="txt">Hello I Am Suman</div>
+<script>
+var txt=document.getElementById('txt');
+txt.style.color='red';
+txt.style.fontSize='55px';
+</script>
+====================================
 Clone Node:-
 <ul id="myid">
 	<li>White</li>
@@ -1210,7 +1243,33 @@ jo time diya hu uske bad run hoga
 </script>
 
 ===========================
-start 46
+select and deselect checkbox:-
+<input type="button" value="select All" onclick="selectAll()">
+<input type="button" value="Deselect All" onclick="deselectall()">
+<input type="checkbox" name="chk" value="php">php
+<input type="checkbox" name="chk" value="css">css
+<input type="checkbox" name="chk" value="java">java
+<input type="checkbox" name="chk" value="laravel">laravel
+<script>
+function selectAll()
+{
+var getname=document.getElementsByName('chk');
+var getlength=getname.length;
+for(var i=0;i<getlength;i++)
+{
+getname[i].checked=true;
+}
+}
+function deselectall()
+{
+var getname=document.getElementsByName('chk');
+var getlength=getname.length;
+for(var i=0;i<getlength;i++)
+{
+getname[i].checked=false;
+}
+}
+</script>
 
 
 
